@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tuskers-blue:    #1e2878;
+  --color-tuskers-glow:    #3040c8;
+  --color-tuskers-charcoal:#1A1A1B;
+  --color-tuskers-dark:    #0d0d0e;
+  --color-tuskers-grey:    #B5B9C5;
+  --color-tuskers-cream:   #F5F0E8;
+  --font-oswald: "Oswald", sans-serif;
+}
+
+/* ── Base ── */
+html, body { height: 100%; }
+body {
+  background-color: #f0f4ff;
+  color: #0d1340;
+  font-family: var(--font-oswald);
+  background-image:
+    radial-gradient(ellipse 120% 60% at 50% 0%, rgba(30,40,120,0.06) 0%, transparent 60%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(30,40,120,0.018) 3px,
+      rgba(30,40,120,0.018) 4px
+    );
+}
+
+/* ── Textures ── */
+.leather {
+  background-color: #ffffff;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(30,40,120,0.018) 3px,
+      rgba(30,40,120,0.018) 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 3px,
+      rgba(30,40,120,0.010) 3px,
+      rgba(30,40,120,0.010) 4px
+    );
+}
+
+.pinstripe {
+  background-color: #eef1ff;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(30,40,120,0.06) 0px,
+    rgba(30,40,120,0.06) 1px,
+    transparent 1px,
+    transparent 24px
+  );
+}
+
+.jersey-mesh {
+  background-color: #dde3ff;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(30,40,120,0.04) 0px,
+      rgba(30,40,120,0.04) 1px,
+      transparent 1px,
+      transparent 8px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(30,40,120,0.04) 0px,
+      rgba(30,40,120,0.04) 1px,
+      transparent 1px,
+      transparent 8px
+    );
+}
+
+/* ── Glow effects ── */
+.blue-glow-border {
+  border: 1.5px solid rgba(30,40,120,0.7);
+  box-shadow: 0 0 12px rgba(30,40,120,0.45), 0 0 28px rgba(30,40,120,0.18), inset 0 0 8px rgba(30,40,120,0.06);
+}
+
+.blue-glow-border:hover {
+  box-shadow: 0 0 20px rgba(30,40,120,0.7), 0 0 48px rgba(30,40,120,0.3), inset 0 0 12px rgba(30,40,120,0.1);
+}
+
+.card-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-lift:hover { transform: translateY(-3px); }
+
+/* ── Score card header bar ── */
+.score-label {
+  background: linear-gradient(135deg, #1e2878 0%, #131b60 100%);
+  color: white;
+  letter-spacing: 0.15em;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+}
+
+/* ── Text glow ── */
+.text-glow {
+  text-shadow: 0 0 20px rgba(30,40,120,0.25), 0 0 40px rgba(30,40,120,0.12);
+}
+
+/* ── Crossed bats + baseball tile ── */
+.baseball-field-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 280'%3E%3Cg transform='translate(140,158) rotate(-45)'%3E%3Cpath d='M-92,0 Q-92,-8 -84,-8 L-28,-5 L4,-11 L72,-11 Q84,-11 84,0 Q84,11 72,11 L4,11 L-28,5 L-84,8 Q-92,8 -92,0 Z' fill='%23c4974a' opacity='0.13'/%3E%3Crect x='-84' y='-5' width='56' height='10' rx='2' fill='%23a08060' opacity='0.12'/%3E%3Cline x1='-80' y1='-5' x2='-68' y2='5' stroke='%23604020' stroke-width='1.5' stroke-opacity='0.09'/%3E%3Cline x1='-68' y1='-5' x2='-56' y2='5' stroke='%23604020' stroke-width='1.5' stroke-opacity='0.09'/%3E%3Cline x1='-56' y1='-5' x2='-44' y2='5' stroke='%23604020' stroke-width='1.5' stroke-opacity='0.09'/%3E%3Cline x1='-44' y1='-5' x2='-32' y2='5' stroke='%23604020' stroke-width='1.5' stroke-opacity='0.09'/%3E%3Cellipse cx='-88' cy='0' rx='9' ry='9' fill='%23a07838' opacity='0.13'/%3E%3C/g%3E%3Cg transform='translate(140,158) rotate(-135)'%3E%3Cpath d='M-92,0 Q-92,-8 -84,-8 L-28,-5 L4,-11 L72,-11 Q84,-11 84,0 Q84,11 72,11 L4,11 L-28,5 L-84,8 Q-92,8 -92,0 Z' fill='%23c4974a' opacity='0.13'/%3E%3Crect x='-84' y='-5' width='56' height='10' rx='2' fill='%23a08060' opacity='0.12'/%3E%3Cline x1='-80' y1='-5' x2='-68' y2='5' stroke='%23604020' stroke-width='1.5' stroke-opacity='0.09'/%3E%3Cline x1='-68' y1='-5' x2='-56' y2='5' stroke='%23604020' stroke-width='1.5' stroke-opacity='0.09'/%3E%3Cline x1='-56' y1='-5' x2='-44' y2='5' stroke='%23604020' stroke-width='1.5' stroke-opacity='0.09'/%3E%3Cline x1='-44' y1='-5' x2='-32' y2='5' stroke='%23604020' stroke-width='1.5' stroke-opacity='0.09'/%3E%3Cellipse cx='-88' cy='0' rx='9' ry='9' fill='%23a07838' opacity='0.13'/%3E%3C/g%3E%3Ccircle cx='140' cy='70' r='26' fill='%23f5f5f5' fill-opacity='0.15' stroke='%23c0c0c0' stroke-width='1.5' stroke-opacity='0.14'/%3E%3Cpath d='M127,55 C121,62 121,78 127,85' fill='none' stroke='%23e05050' stroke-width='1.8' stroke-opacity='0.13'/%3E%3Cpath d='M153,55 C159,62 159,78 153,85' fill='none' stroke='%23e05050' stroke-width='1.8' stroke-opacity='0.13'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 280px 280px;
+}
