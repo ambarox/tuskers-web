@@ -23,12 +23,12 @@ export default function RosterPage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: i * 0.08 }}
-            className="card-hover group relative border-2 border-[#1e2878]/30 hover:border-[#1e2878] overflow-hidden rounded-sm bg-white"
+            className="card-hover group relative border-2 border-[#1e2878]/30 hover:border-[#1e2878] overflow-hidden rounded-sm bg-[#1e2878]"
           >
             {/* Player image */}
-            <div className="relative aspect-[3/4] bg-[#eef1ff] overflow-hidden">
+            <div className="relative aspect-[3/4] bg-[#1e2878] overflow-hidden">
               {/* Fallback silhouette — behind the image */}
-              <div className="absolute inset-0 flex items-center justify-center text-[#1e2878]/20 text-8xl select-none pointer-events-none">
+              <div className="absolute inset-0 flex items-center justify-center text-white/20 text-8xl select-none pointer-events-none">
                 ⚾
               </div>
               <Image
@@ -50,10 +50,10 @@ export default function RosterPage() {
               <h3 className="font-black italic tracking-wide text-white text-lg leading-tight">
                 {player.name}
               </h3>
-              <p className="text-xs tracking-widest uppercase text-[#B5B9C5] mt-0.5">
-                {player.pos}
-                {player.pos2 ? ` · ${player.pos2}` : ""}
-              </p>
+              <p className="text-xs tracking-widest uppercase text-[#B5B9C5] mt-0.5">{player.pos}</p>
+              {player.pos2 && (
+                <p className="text-xs tracking-widest uppercase text-[#B5B9C5]/70 mt-0.5">{player.pos2}</p>
+              )}
             </div>
           </motion.div>
         ))}

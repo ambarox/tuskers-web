@@ -20,16 +20,16 @@ export default function BallparkMoments({
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="leather blue-glow-border card-lift rounded-sm overflow-hidden flex flex-col flex-1 min-h-0"
+      className="leather blue-glow-border card-lift rounded-sm overflow-hidden flex flex-col md:flex-1 md:min-h-0"
     >
       <div className="score-label text-center">Ballpark Moments</div>
 
       {/* 6×2 photo grid */}
-      <div className="grid grid-cols-2 grid-rows-6 gap-0.5 p-0.5 flex-1 min-h-0">
+      <div className="grid grid-cols-2 gap-0.5 p-0.5 md:grid-rows-6 md:flex-1 md:min-h-0">
         {gallery.map((item) => (
           <div
             key={item.id}
-            className="relative overflow-hidden bg-[#dde3ff] border border-[#1e2878]/20"
+            className="relative overflow-hidden bg-[#dde3ff] border border-[#1e2878]/20 aspect-[4/3] md:aspect-auto"
           >
             <img
               src={item.src}
