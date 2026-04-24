@@ -5,6 +5,7 @@ import RecentResultsCard from "@/components/RecentResultsCard";
 import PlayerSpotlightCard from "@/components/PlayerSpotlightCard";
 import BallparkMoments from "@/components/BallparkMoments";
 import AboutUsCard from "@/components/AboutUsCard";
+import AchievementsCard from "@/components/AchievementsCard";
 
 export default function Home() {
   const lastMatch = teamData.scores[0];
@@ -23,10 +24,13 @@ export default function Home() {
 
           {/* Score cards row */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <LastMatchCard match={lastMatch} />
+            <LastMatchCard match={lastMatch} season={teamData.season} />
             <NextGameCard  game={nextGame}  />
             <RecentResultsCard />
           </div>
+
+          {/* Season achievements */}
+          <AchievementsCard achievements={teamData.achievements} />
 
           {/* Player spotlight */}
           <PlayerSpotlightCard players={teamData.roster} />

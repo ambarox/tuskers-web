@@ -10,7 +10,7 @@ export default function HistoryPage() {
     <div className="max-w-4xl mx-auto px-6 py-12">
       {/* Header */}
       <div className="mb-10 text-center">
-        <p className="text-xs tracking-[0.4em] uppercase text-[#3040c8] font-bold mb-2">Season 2026</p>
+        <p className="text-xs tracking-[0.4em] uppercase text-[#3040c8] font-bold mb-2">{teamData.season}</p>
         <h1 className="text-4xl font-black tracking-widest uppercase text-[#0d1340] text-glow">
           Match History
         </h1>

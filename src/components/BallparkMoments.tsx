@@ -24,8 +24,8 @@ export default function BallparkMoments({
     >
       <div className="score-label text-center">Ballpark Moments</div>
 
-      {/* 4×2 photo grid — fixed aspect ratio cells so real images don't blow up the layout */}
-      <div className="grid grid-cols-2 grid-rows-4 gap-0.5 p-0.5 flex-1 min-h-0">
+      {/* 6×2 photo grid */}
+      <div className="grid grid-cols-2 grid-rows-6 gap-0.5 p-0.5 flex-1 min-h-0">
         {gallery.map((item) => (
           <div
             key={item.id}

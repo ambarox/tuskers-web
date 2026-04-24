@@ -11,7 +11,7 @@ type Match = {
   isWin: boolean;
 };
 
-export default function LastMatchCard({ match }: { match: Match }) {
+export default function LastMatchCard({ match, season }: { match: Match; season: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -67,9 +67,12 @@ export default function LastMatchCard({ match }: { match: Match }) {
         <span className={`text-xs font-bold tracking-widest uppercase ${match.isWin ? "text-green-700" : "text-red-400"}`}>
           Final · {match.isWin ? "W" : "L"}
         </span>
-        <span className="text-[10px] text-[#5a6280]">
-          {new Date(match.date).toLocaleDateString("en-SG", { day: "2-digit", month: "2-digit", year: "numeric" })}
-        </span>
+        <div className="text-right">
+          <p className="text-[10px] text-[#5a6280]">
+            {new Date(match.date).toLocaleDateString("en-SG", { day: "2-digit", month: "2-digit", year: "numeric" })}
+          </p>
+          <p className="text-[9px] text-[#5a6280] tracking-widest uppercase">{season}</p>
+        </div>
       </div>
     </motion.div>
   );

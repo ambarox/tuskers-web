@@ -85,7 +85,7 @@ export default function PlayerSpotlightCard({ players }: { players: Player[] }) 
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="score-label text-center">Player Spotlight</div>
+      <div className="score-label text-center">Team Spotlight</div>
 
       {/* Cards row */}
       <div className="p-4 flex-1">

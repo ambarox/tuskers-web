@@ -65,6 +65,17 @@ export default function JoinPage() {
               Register Now
             </a>
             <p className="text-xs text-[#5a6280] tracking-wide">{teamData.contact.email}</p>
+            <div className="flex flex-col items-center gap-1">
+              {teamData.contact.phones.map((p) => (
+                <a
+                  key={p.number}
+                  href={`tel:${p.number.replace(/\s/g, "")}`}
+                  className="text-xs text-[#5a6280] hover:text-[#0d1340] transition-colors tracking-wide"
+                >
+                  {p.name}: {p.number}
+                </a>
+              ))}
+            </div>
             <a
               href={`https://instagram.com/${teamData.contact.social.ig.replace("@", "")}`}
               target="_blank"

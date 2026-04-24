@@ -34,7 +34,7 @@ export default function RecentResultsCard() {
 
       <div className="bg-[#1e2878]/15 border-t border-[#1e2878]/30 px-4 py-2">
         <span className="text-[10px] text-[#5a6280] tracking-widest uppercase">
-          Season 2026
+          {teamData.season}
         </span>
       </div>
     </motion.div>

@@ -10,13 +10,6 @@ function InstagramIcon() {
   );
 }
 
-function XIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-    </svg>
-  );
-}
 
 function FacebookIcon() {
   return (
@@ -45,7 +38,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-xs text-[#5a6280] leading-relaxed">
-              Singapore's Sri Lankan baseball community. Playing with heart since 2018.
+              Singapore's Sri Lankan baseball community. Playing with heart since {teamData.about.founded}.
             </p>
 
             {/* Social icons */}
@@ -60,14 +53,9 @@ export default function Footer() {
                 <InstagramIcon />
               </a>
               <a
-                href="#"
-                aria-label="X / Twitter"
-                className="text-[#5a6280] hover:text-[#3040c8] transition-colors duration-200"
-              >
-                <XIcon />
-              </a>
-              <a
-                href="#"
+                href={teamData.contact.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="text-[#5a6280] hover:text-[#3040c8] transition-colors duration-200"
               >
@@ -103,10 +91,26 @@ export default function Footer() {
             </p>
             <a
               href={`mailto:${teamData.contact.email}`}
-              className="text-xs text-[#5a6280] hover:text-[#0d1340] transition-colors tracking-wide"
+              className="flex items-center gap-1.5 text-xs text-[#5a6280] hover:text-[#0d1340] transition-colors tracking-wide"
             >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m2 7 10 7 10-7"/>
+              </svg>
               {teamData.contact.email}
             </a>
+            {teamData.contact.phones.map((p) => (
+              <a
+                key={p.number}
+                href={`tel:${p.number.replace(/\s/g, "")}`}
+                className="flex items-center gap-1.5 text-xs text-[#5a6280] hover:text-[#0d1340] transition-colors tracking-wide"
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/>
+                </svg>
+                {p.name}: {p.number}
+              </a>
+            ))}
             <a
               href="/join"
               className="inline-block text-center py-2.5 px-5 bg-[#1e2878] hover:bg-[#3040c8] text-white text-xs font-black tracking-widest uppercase rounded-sm transition-colors duration-200 mt-1"

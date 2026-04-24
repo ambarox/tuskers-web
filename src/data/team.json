@@ -1,4 +1,5 @@
 {
+  "season": "2026 Spring",
   "scores": [
     {
       "id": 1,
@@ -123,7 +124,7 @@
       "id": 5,
       "name": "Thilina Viraj",
       "pos": "Center Field",
-      "pos2": "",
+      "pos2": "Left Field",
       "no": "22",
       "img": "/players/thilina.jpeg",
       "bio": "Speed and instinct in the outfield. Mostly plays at center."
@@ -141,7 +142,7 @@
       "id": 7,
       "name": "Vimukthi Gunaratne",
       "pos": "Right Field",
-      "pos2": "",
+      "pos2": "Designated Hitter",
       "no": "2",
       "img": "/players/vimukthi.jpeg",
       "bio": "Smooth fielder and clutch hitter. Brings calm to the outfield."
@@ -150,7 +151,7 @@
       "id": 8,
       "name": "Yee Hau",
       "pos": "Right Field",
-      "pos2": "",
+      "pos2": "3rd Base",
       "no": "19",
       "img": "/players/yh.jpeg",
       "bio": "Hot corner specialist with a cannon arm and solid batting average."
@@ -172,6 +173,49 @@
       "no": "55",
       "img": "/players/harsha.jpeg",
       "bio": "Veteran outfielder with a strong arm and big-game experience."
+    },
+    {
+      "id": 11,
+      "name": "Thisakya Bandara",
+      "pos": "2nd Base",
+      "pos2": "1st Base",
+      "no": "9",
+      "img": "/players/thisakya.jpeg",
+      "bio": "Second baseman who can play in the 1st base. Good at hitting the ball."
+    },
+    {
+      "id": 12,
+      "name": "Gajan Santhirakumar",
+      "pos": "Right Field",
+      "pos2": "Pitcher",
+      "no": "9",
+      "img": "/players/gajan.jpeg",
+      "bio": "Outfielder who can do occasional pitching."
+    },
+    {
+      "id": 13,
+      "name": "Sandun Fernando",
+      "pos": "2nd Base",
+      "pos2": "Right Field",
+      "no": "8",
+      "img": "/players/sandun.jpeg",
+      "bio": "Outfielder who can do occasional pitching."
+    },{
+      "id": 14,
+      "name": "Lahiru De Silva",
+      "pos": "Social Media & Photography",
+      "pos2": "Official Videographer",
+      "no": "1",
+      "img": "/players/lahirur.jpeg",
+      "bio": "Pertinent to the club's social media and photography."
+    },{
+      "id": 15,
+      "name": "Lahiru Kaluthanthri",
+      "pos": "1st Base",
+      "pos2": "3rd Base",
+      "no": "99",
+      "img": "/players/lahiruk.jpeg",
+      "bio": "1st baseman who can play in the 3rd base."
     }
   ],
   "schedule": [
@@ -181,44 +225,31 @@
       "date": "2026-04-26",
       "venue": "Singapore American School",
       "time": "15:15"
-    },
-    {
-      "id": 2,
-      "opponent": "Eagles SG",
-      "date": "2026-05-18",
-      "venue": "Kallang Baseball Centre",
-      "time": "13:00"
-    },
-    {
-      "id": 3,
-      "opponent": "Red Bulls SG",
-      "date": "2026-06-01",
-      "venue": "Bedok Sports Complex",
-      "time": "15:00"
-    },
-    {
-      "id": 4,
-      "opponent": "Cobra Strike",
-      "date": "2026-06-15",
-      "venue": "Kallang Baseball Centre",
-      "time": "14:00"
     }
   ],
   "contact": {
     "email": "play@tuskers.sg",
-    "phone": "+65 9123 4567",
+    "phones": [
+      { "name": "Dileepa", "number": "+65 9017 4556" },
+      { "name": "Ben", "number": "+65 8113 3255" }
+    ],
     "social": {
-      "ig": "@ceylontuskers",
-      "youtube": "https://www.youtube.com/@ceylontuskers",
-      "facebook": "https://www.facebook.com/ceylontuskers"
+      "ig": "@tuskers.baseball",
+      "youtube": "https://www.youtube.com/@CeylonTuskersBaseball",
+      "facebook": "https://www.facebook.com/tuskersSG"
     }
   },
   "about": {
-    "founded": "2018",
+    "founded": "2022",
     "tagline": "Singapore's Sri Lankan Baseball Club",
     "description": "Ceylon Tuskers is a Singapore-based baseball club founded by Sri Lankan expats who share a passion for the game. We compete in the Singapore International Baseball League and welcome players of all skill levels — from seasoned veterans to first-time batters.",
-    "highlights": ["SIBL Members", "Est. 2018", "Open to All"]
+    "highlights": ["SIBL Members", "Est. 2022", "Open to All", "2025 - Summer Semi finalist"]
   },
+  "achievements": [
+    { "season": "2025 Summer", "result": "Semi-Finalists", "badge": "SF", "highlight": true },
+    { "season": "2025 Spring", "result": "Quarter-Finalists", "badge": "QF", "highlight": false },
+    { "season": "2024", "result": "Quarter-Finalists", "badge": "QF", "highlight": false }
+  ],
   "gallery": [
     { "id": 1, "src": "/gallery/match1.jpeg", "alt": "Game day action" },
     { "id": 2, "src": "/gallery/match2.jpeg", "alt": "Team at bat" },
@@ -229,6 +260,8 @@
     { "id": 7, "src": "/gallery/match7.jpeg", "alt": "Pre-game warmup" },
     { "id": 8, "src": "/gallery/match8.jpeg", "alt": "Victory moment" },
     { "id": 9, "src": "/gallery/match9.jpeg", "alt": "Victory moment" },
-    { "id": 10, "src": "/gallery/match10.jpeg", "alt": "Victory moment" }
+    { "id": 10, "src": "/gallery/match10.jpeg", "alt": "Victory moment" },
+    { "id": 11, "src": "/gallery/match11.jpeg", "alt": "Team huddle" },
+    { "id": 12, "src": "/gallery/match12.jpeg", "alt": "Match day" }
   ]
 }
