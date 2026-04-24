@@ -58,6 +58,9 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: { canonical: "https://tuskers.sg" },
+  verification: {
+    google: "DRmD4RR7wK3BshMbAVgIt4phw46-i125fuSxM-O7q-A",
+  },
 };
 
 const jsonLd = {
