@@ -63,6 +63,9 @@ export default function LastMatchCard({ match, season }: { match: Match; season:
           <p className="text-[9px] text-[#3040c8] tracking-wider text-center uppercase font-bold">
             {match.matchType}
           </p>
+          <p className="text-[9px] text-[#5a6280] tracking-wider text-center uppercase">
+            {match.venue}
+          </p>
         </div>
       </div>
 
