@@ -8,6 +8,7 @@
       "opp": 1,
       "date": "2026-04-19",
       "venue": "Singapore American School",
+      "matchType": "Group Stage",
       "isWin": true
     },
     {
@@ -17,6 +18,7 @@
       "opp": 11,
       "date": "2026-03-15",
       "venue": "Singapore American School",
+      "matchType": "Group Stage",
       "isWin": false
     },
     {
@@ -26,6 +28,7 @@
       "opp": 3,
       "date": "2026-03-07",
       "venue": "Bedok Sports Complex",
+      "matchType": "Group Stage",
       "isWin": false
     },
     {
@@ -35,6 +38,7 @@
       "opp": 0,
       "date": "2026-03-01",
       "venue": "Singapore American School",
+      "matchType": "Group Stage",
       "isWin": true
     },
     {
@@ -44,6 +48,7 @@
       "opp": 0,
       "date": "2026-02-22",
       "venue": "Singapore American School",
+      "matchType": "Group Stage",
       "isWin": true
     },
     {
@@ -53,6 +58,7 @@
       "opp": 8,
       "date": "2026-02-08",
       "venue": "Singapore American School",
+      "matchType": "Group Stage",
       "isWin": false
     },
     {
@@ -62,6 +68,7 @@
       "opp": 2,
       "date": "2026-02-01",
       "venue": "Singapore American School",
+      "matchType": "Group Stage",
       "isWin": true
     },
     {
@@ -71,6 +78,7 @@
       "opp": 13,
       "date": "2026-01-25",
       "venue": "Singapore American School",
+      "matchType": "Group Stage",
       "isWin": false
     },
     {
@@ -80,6 +88,7 @@
       "opp": 8,
       "date": "2026-01-18",
       "venue": "Singapore American School",
+      "matchType": "Group Stage",
       "isWin": false
     }
   ],
@@ -224,7 +233,8 @@
       "opponent": "Penguins",
       "date": "2026-04-26",
       "venue": "Singapore American School",
-      "time": "15:15"
+      "time": "15:15",
+      "matchType": "Playoff (Quarter Final)"
     }
   ],
   "contact": {

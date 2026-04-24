@@ -8,6 +8,7 @@ type Match = {
   opp: number;
   date: string;
   venue: string;
+  matchType: string;
   isWin: boolean;
 };
 
@@ -55,9 +56,12 @@ export default function LastMatchCard({ match, season }: { match: Match; season:
         </div>
 
         {/* Tournament */}
-        <div className="mt-1 pt-2 border-t border-[#1e2878]/15">
-          <p className="text-[9px] text-[#5a6280] tracking-wider text-center uppercase leading-tight">
+        <div className="mt-1 pt-2 border-t border-[#1e2878]/15 flex flex-col items-center gap-0.5">
+          <p className="text-[9px] text-[#5a6280] tracking-wider text-center uppercase">
             Singapore International Baseball League
+          </p>
+          <p className="text-[9px] text-[#3040c8] tracking-wider text-center uppercase font-bold">
+            {match.matchType}
           </p>
         </div>
       </div>

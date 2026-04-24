@@ -57,6 +57,9 @@ export default function HistoryPage() {
                     {new Date(s.date).toLocaleDateString("en-SG", { day: "numeric", month: "short", year: "numeric" })}
                     {" · "}{s.venue}
                   </p>
+                  <p className="text-[10px] text-[#3040c8] tracking-wider font-bold uppercase mt-0.5">
+                    {s.matchType}
+                  </p>
                 </div>
               </div>
               <div className="text-right">
@@ -83,6 +86,9 @@ export default function HistoryPage() {
                 <p className="text-[10px] text-[#5a6280] mt-0.5 tracking-wider">
                   {new Date(g.date).toLocaleDateString("en-SG", { day: "numeric", month: "short", year: "numeric" })}
                   {" · "}{g.venue}
+                </p>
+                <p className="text-[10px] text-[#3040c8] font-bold tracking-wider uppercase mt-0.5">
+                  {g.matchType}
                 </p>
               </div>
               <span className="text-xs text-[#3040c8] font-bold tracking-widest">{g.time}</span>

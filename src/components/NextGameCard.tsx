@@ -7,6 +7,7 @@ type Game = {
   date: string;
   venue: string;
   time: string;
+  matchType: string;
 };
 
 export default function NextGameCard({ game }: { game: Game }) {
@@ -28,6 +29,9 @@ export default function NextGameCard({ game }: { game: Game }) {
           <p className="text-base font-black tracking-widest uppercase text-[#5a6280]">{game.opponent}</p>
           <p className="text-[11px] text-[#5a6280] mt-1">
             {new Date(game.date).toLocaleDateString("en-SG", { day: "numeric", month: "short", year: "numeric" })}
+          </p>
+          <p className="text-[10px] text-[#3040c8] font-bold tracking-widest uppercase mt-0.5">
+            {game.matchType}
           </p>
         </div>
       </div>
