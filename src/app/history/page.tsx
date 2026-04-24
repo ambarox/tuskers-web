@@ -1,6 +1,15 @@
 import teamData from "@/data/team.json";
 
-export const metadata = { title: "History – Ceylon Tuskers" };
+export const metadata = {
+  title: "Match History",
+  description: "Full match history and results for Ceylon Tuskers Baseball Club competing in the Singapore International Baseball League.",
+  alternates: { canonical: "https://tuskers.sg/history" },
+  openGraph: {
+    title: "Match History | Ceylon Tuskers",
+    description: "Full season results and upcoming schedule for Ceylon Tuskers Baseball Club, Singapore.",
+    url: "https://tuskers.sg/history",
+  },
+};
 
 export default function HistoryPage() {
   const wins   = teamData.scores.filter((s) => s.isWin).length;

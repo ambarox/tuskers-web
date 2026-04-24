@@ -1,6 +1,15 @@
 import teamData from "@/data/team.json";
 
-export const metadata = { title: "Join – Ceylon Tuskers" };
+export const metadata = {
+  title: "Join the Club",
+  description: "Join Ceylon Tuskers Baseball Club in Singapore. Open to all skill levels — from beginners to experienced players. Register your interest today.",
+  alternates: { canonical: "https://tuskers.sg/join" },
+  openGraph: {
+    title: "Join Ceylon Tuskers | Baseball Club Singapore",
+    description: "Join Ceylon Tuskers Baseball Club in Singapore. Open to all skill levels. Register your interest today.",
+    url: "https://tuskers.sg/join",
+  },
+};
 
 export default function JoinPage() {
   return (
