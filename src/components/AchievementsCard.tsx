@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 
 type Achievement = {
+  id: number;
   season: string;
   result: string;
   badge: string;

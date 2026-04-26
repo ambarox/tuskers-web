@@ -8,8 +8,9 @@ import AboutUsCard from "@/components/AboutUsCard";
 import AchievementsCard from "@/components/AchievementsCard";
 
 export default function Home() {
-  const lastMatch = teamData.scores[0];
-  const nextGame  = teamData.schedule[0];
+  const lastMatch    = [...teamData.scores].sort((a, b) => b.id - a.id)[0];
+  const nextGame     = teamData.schedule[0];
+  const achievements = [...teamData.achievements].sort((a, b) => b.id - a.id);
 
 
   return (
@@ -30,7 +31,7 @@ export default function Home() {
           </div>
 
           {/* Season achievements */}
-          <AchievementsCard achievements={teamData.achievements} />
+          <AchievementsCard achievements={achievements} />
 
           {/* Player spotlight */}
           <PlayerSpotlightCard players={teamData.roster} />

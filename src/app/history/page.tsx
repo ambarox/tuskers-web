@@ -45,7 +45,7 @@ export default function HistoryPage() {
       <div className="leather blue-glow-border rounded-sm overflow-hidden">
         <div className="score-label">All Results</div>
         <div className="divide-y divide-[#1e2878]/15">
-          {teamData.scores.map((s) => (
+          {[...teamData.scores].sort((a, b) => b.id - a.id).map((s) => (
             <div key={s.id} className="flex items-center justify-between px-5 py-3.5 hover:bg-[#1e2878]/5 transition-colors">
               <div className="flex items-center gap-4">
                 <span className={`text-xs font-black tracking-widest w-4 ${s.isWin ? "text-green-700" : "text-red-400"}`}>

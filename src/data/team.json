@@ -3,43 +3,43 @@
   "scores": [
     {
       "id": 1,
-      "opponent": "Penguines",
-      "tuskers": 7,
-      "opp": 1,
-      "date": "2026-04-19",
+      "opponent": "Brewers",
+      "tuskers": 1,
+      "opp": 8,
+      "date": "2026-01-18",
       "venue": "Singapore American School",
       "matchType": "Group Stage",
-      "isWin": true
+      "isWin": false
     },
     {
       "id": 2,
-      "opponent": "Falcons",
-      "tuskers": 3,
-      "opp": 11,
-      "date": "2026-03-15",
+      "opponent": "X Men",
+      "tuskers": 7,
+      "opp": 13,
+      "date": "2026-01-25",
       "venue": "Singapore American School",
       "matchType": "Group Stage",
       "isWin": false
     },
     {
       "id": 3,
-      "opponent": "Islanders",
-      "tuskers": 2,
-      "opp": 3,
-      "date": "2026-03-07",
-      "venue": "Bedok Sports Complex",
-      "matchType": "Group Stage",
-      "isWin": false
-    },
-    {
-      "id": 4,
-      "opponent": "Islanders",
-      "tuskers": 7,
-      "opp": 0,
-      "date": "2026-03-01",
+      "opponent": "Blue Eagles",
+      "tuskers": 5,
+      "opp": 2,
+      "date": "2026-02-01",
       "venue": "Singapore American School",
       "matchType": "Group Stage",
       "isWin": true
+    },
+    {
+      "id": 4,
+      "opponent": "Penguins",
+      "tuskers": 6,
+      "opp": 8,
+      "date": "2026-02-08",
+      "venue": "Singapore American School",
+      "matchType": "Group Stage",
+      "isWin": false
     },
     {
       "id": 5,
@@ -53,43 +53,53 @@
     },
     {
       "id": 6,
-      "opponent": "Penguins",
-      "tuskers": 6,
-      "opp": 8,
-      "date": "2026-02-08",
-      "venue": "Singapore American School",
-      "matchType": "Group Stage",
-      "isWin": false
-    },
-    {
-      "id": 7,
-      "opponent": "Blue Eagles",
-      "tuskers": 5,
-      "opp": 2,
-      "date": "2026-02-01",
+      "opponent": "Islanders",
+      "tuskers": 7,
+      "opp": 0,
+      "date": "2026-03-01",
       "venue": "Singapore American School",
       "matchType": "Group Stage",
       "isWin": true
     },
     {
+      "id": 7,
+      "opponent": "Islanders",
+      "tuskers": 2,
+      "opp": 3,
+      "date": "2026-03-07",
+      "venue": "Bedok Sports Complex",
+      "matchType": "Group Stage",
+      "isWin": false
+    },
+    {
       "id": 8,
-      "opponent": "X Men",
-      "tuskers": 7,
-      "opp": 13,
-      "date": "2026-01-25",
+      "opponent": "Falcons",
+      "tuskers": 3,
+      "opp": 11,
+      "date": "2026-03-15",
       "venue": "Singapore American School",
       "matchType": "Group Stage",
       "isWin": false
     },
     {
       "id": 9,
-      "opponent": "Brewers",
-      "tuskers": 1,
-      "opp": 8,
-      "date": "2026-01-18",
+      "opponent": "Penguines",
+      "tuskers": 7,
+      "opp": 1,
+      "date": "2026-04-19",
       "venue": "Singapore American School",
       "matchType": "Group Stage",
-      "isWin": false
+      "isWin": true
+    },
+    {
+      "id": 10,
+      "opponent": "Penguines",
+      "tuskers": 10,
+      "opp": 6,
+      "date": "2026-04-26",
+      "venue": "Singapore American School",
+      "matchType": "Playoff (Quarter Final)",
+      "isWin": true
     }
   ],
   "roster": [
@@ -230,11 +240,11 @@
   "schedule": [
     {
       "id": 1,
-      "opponent": "Penguins",
-      "date": "2026-04-26",
+      "opponent": "Blue Sox",
+      "date": "2026-05-10",
       "venue": "Singapore American School",
-      "time": "15:15",
-      "matchType": "Playoff (Quarter Final)"
+      "time": "09:00",
+      "matchType": "Playoff (Semi Final)"
     }
   ],
   "contact": {
@@ -256,9 +266,10 @@
     "highlights": ["SIBL Members", "Est. 2022", "Open to All", "2025 - Summer Semi finalist"]
   },
   "achievements": [
-    { "season": "2025 Summer", "result": "Semi-Finalists", "badge": "SF", "highlight": true },
-    { "season": "2025 Spring", "result": "Quarter-Finalists", "badge": "QF", "highlight": false },
-    { "season": "2024", "result": "Quarter-Finalists", "badge": "QF", "highlight": false }
+    { "id": 1, "season": "2024", "result": "Quarter-Finalists", "badge": "QF", "highlight": false },
+    { "id": 2, "season": "2025 Spring", "result": "Quarter-Finalists", "badge": "QF", "highlight": false },
+    { "id": 3, "season": "2025 Summer", "result": "Semi-Finalists", "badge": "SF", "highlight": false },
+    { "id": 4, "season": "2026 Spring", "result": "Semi-Finalists", "badge": "SF", "highlight": true }
   ],
   "gallery": [
     { "id": 1, "src": "/gallery/match1.jpeg", "alt": "Game day action" },

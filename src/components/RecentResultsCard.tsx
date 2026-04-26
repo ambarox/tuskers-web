@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import teamData from "@/data/team.json";
 
 export default function RecentResultsCard() {
-  const results = teamData.scores.slice(1, 9);
+  const sorted = [...teamData.scores].sort((a, b) => b.id - a.id);
+  const results = sorted.slice(1, 9);
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
