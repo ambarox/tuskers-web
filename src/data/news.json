@@ -1,0 +1,19 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "Quarter Final Victory — Tuskers Advance to Semi Finals!",
+      "summary": "The Ceylon Tuskers put on a dominant batting display to defeat the Penguines 10–6 in the Quarter Finals, securing their place in the Semi Finals. A shaky start through the first three innings gave way to an explosive 4th inning where the Tuskers scored 8 unanswered runs to seal the win. An outstanding team effort all-round.",
+      "date": "2026-04-26",
+      "img": "/news/news1.jpeg",
+      "tag": "Match Report",
+      "opponent": "Penguines",
+      "innings": [
+        { "inning": 1, "tuskers": 0, "opp": 1 },
+        { "inning": 2, "tuskers": 1, "opp": 0 },
+        { "inning": 3, "tuskers": 1, "opp": 1 },
+        { "inning": 4, "tuskers": 8, "opp": 4 }
+      ]
+    }
+  ]
+}
