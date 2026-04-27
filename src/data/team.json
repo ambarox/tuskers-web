@@ -1,5 +1,6 @@
 {
   "season": "2026 Spring",
+  "offSeason": false,
   "scores": [
     {
       "id": 1,

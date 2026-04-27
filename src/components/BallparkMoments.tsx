@@ -15,6 +15,9 @@ export default function BallparkMoments({
   gallery: GalleryItem[];
   youtubeUrl: string;
 }) {
+  const items = gallery.slice(0, 16);
+  const rows  = Math.ceil(items.length / 2);
+
   return (
     <motion.div
       initial={{ opacity: 0, x: 20 }}
@@ -24,9 +27,11 @@ export default function BallparkMoments({
     >
       <div className="score-label text-center">Ballpark Moments</div>
 
-      {/* 6×2 photo grid */}
-      <div className="grid grid-cols-2 gap-0.5 p-0.5 md:grid-rows-6 md:flex-1 md:min-h-0">
-        {gallery.map((item) => (
+      <div
+        className="grid grid-cols-2 gap-0.5 p-0.5 md:flex-1 md:min-h-0"
+        style={{ gridTemplateRows: `repeat(${rows}, 1fr)` }}
+      >
+        {items.map((item) => (
           <div
             key={item.id}
             className="relative overflow-hidden bg-[#dde3ff] border border-[#1e2878]/20 aspect-[4/3] md:aspect-auto"
@@ -36,7 +41,6 @@ export default function BallparkMoments({
               alt={item.alt}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               onError={(e) => {
-                // Placeholder when image not yet uploaded
                 const t = e.currentTarget;
                 t.style.display = "none";
                 const parent = t.parentElement;
@@ -53,9 +57,10 @@ export default function BallparkMoments({
         ))}
       </div>
 
-      {/* Footer with YouTube link */}
       <div className="bg-[#1e2878]/15 border-t border-[#1e2878]/30 px-4 py-2 flex items-center justify-between">
-        <span className="text-[9px] text-[#5a6280] tracking-widest uppercase">Match Gallery</span>
+        <span className="text-[9px] text-[#5a6280] tracking-widest uppercase">
+          {items.length} Photo{items.length !== 1 ? "s" : ""}
+        </span>
         <a
           href={youtubeUrl}
           target="_blank"

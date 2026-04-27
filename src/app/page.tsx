@@ -1,4 +1,5 @@
 import teamData from "@/data/team.json";
+import newsData from "@/data/news.json";
 import LastMatchCard from "@/components/LastMatchCard";
 import NextGameCard from "@/components/NextGameCard";
 import RecentResultsCard from "@/components/RecentResultsCard";
@@ -6,12 +7,15 @@ import PlayerSpotlightCard from "@/components/PlayerSpotlightCard";
 import BallparkMoments from "@/components/BallparkMoments";
 import AboutUsCard from "@/components/AboutUsCard";
 import AchievementsCard from "@/components/AchievementsCard";
+import LatestNewsCard from "@/components/LatestNewsCard";
 
 export default function Home() {
   const lastMatch    = [...teamData.scores].sort((a, b) => b.id - a.id)[0];
   const nextGame     = teamData.schedule[0];
   const achievements = [...teamData.achievements].sort((a, b) => b.id - a.id);
+  const latestNews   = [...newsData.news].sort((a, b) => b.id - a.id)[0];
 
+  const showNextGame = !teamData.offSeason && !!nextGame;
 
   return (
     <div className="max-w-6xl mx-auto px-6 pt-10 pb-4">
@@ -23,10 +27,13 @@ export default function Home() {
           {/* About Us — top */}
           <AboutUsCard about={teamData.about} />
 
+          {/* Latest News */}
+          {latestNews && <LatestNewsCard item={latestNews} />}
+
           {/* Score cards row */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className={`grid grid-cols-1 gap-4 ${showNextGame ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
             <LastMatchCard match={lastMatch} season={teamData.season} />
-            <NextGameCard  game={nextGame}  />
+            {showNextGame && <NextGameCard game={nextGame} />}
             <RecentResultsCard />
           </div>
 
