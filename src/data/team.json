@@ -101,6 +101,16 @@
       "venue": "Singapore American School",
       "matchType": "Playoff (Quarter Final)",
       "isWin": true
+    },
+    {
+      "id": 11,
+      "opponent": "Blue Sox",
+      "tuskers": 1,
+      "opp": 9,
+      "date": "2026-05-10",
+      "venue": "Singapore American School",
+      "matchType": "Playoff (Semi Final)",
+      "isWin": false
     }
   ],
   "roster": [
@@ -238,16 +248,7 @@
       "bio": "1st baseman who can play in the 3rd base."
     }
   ],
-  "schedule": [
-    {
-      "id": 1,
-      "opponent": "Blue Sox",
-      "date": "2026-05-10",
-      "venue": "Singapore American School",
-      "time": "09:00",
-      "matchType": "Playoff (Semi Final)"
-    }
-  ],
+  "schedule": [],
   "contact": {
     "email": "play@tuskers.sg",
     "phones": [
@@ -264,7 +265,7 @@
     "founded": "2022",
     "tagline": "Singapore's Sri Lankan Baseball Club",
     "description": "Ceylon Tuskers is a Singapore-based baseball club founded by Sri Lankan expats who share a passion for the game. We compete in the Singapore International Baseball League and welcome players of all skill levels — from seasoned veterans to first-time batters.",
-    "highlights": ["SIBL Members", "Est. 2022", "Open to All", "2025 - Summer Semi finalist"]
+    "highlights": ["SIBL Members", "Est. 2022", "Open to All", "2026 - Spring Semi finalist"]
   },
   "achievements": [
     { "id": 1, "season": "2024", "result": "Quarter-Finalists", "badge": "QF", "highlight": false },

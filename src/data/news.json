@@ -1,6 +1,22 @@
 {
   "news": [
     {
+      "id": 2,
+      "title": "Semi Final Exit — Blue Sox Defeat Tuskers 9–1",
+      "summary": "The Ceylon Tuskers bowed out of the 2026 Spring season after a tough 9–1 defeat to the Blue Sox in the Semi Finals. Blue Sox struck early with a dominant 5-run first inning that set the tone, and the Tuskers struggled to find their rhythm at the plate. Our lone run came in the 4th inning, showing the fight never left the dugout. A tough result, but the Tuskers can be proud of reaching the Semi Finals this season. We rise again.",
+      "date": "2026-05-10",
+      "img": "/news/news2.jpeg",
+      "tag": "Match Report",
+      "opponent": "Blue Sox",
+      "innings": [
+        { "inning": 1, "tuskers": 0, "opp": 5 },
+        { "inning": 2, "tuskers": 0, "opp": 0 },
+        { "inning": 3, "tuskers": 0, "opp": 1 },
+        { "inning": 4, "tuskers": 1, "opp": 1 },
+        { "inning": 5, "tuskers": 0, "opp": 2 }
+      ]
+    },
+    {
       "id": 1,
       "title": "Quarter Final Victory — Tuskers Advance to Semi Finals!",
       "summary": "The Ceylon Tuskers put on a dominant batting display to defeat the Penguines 10–6 in the Quarter Finals, securing their place in the Semi Finals. A shaky start through the first three innings gave way to an explosive 4th inning where the Tuskers scored 8 unanswered runs to seal the win. An outstanding team effort all-round.",
