@@ -79,7 +79,7 @@ export default function HistoryPage() {
       <div className="mt-8 leather blue-glow-border rounded-sm overflow-hidden">
         <div className="score-label">Upcoming Schedule</div>
         <div className="divide-y divide-[#1e2878]/15">
-          {teamData.schedule.map((g) => (
+          {(teamData.schedule as { id: number; opponent: string; date: string; venue: string; time: string; matchType: string }[]).map((g) => (
             <div key={g.id} className="flex items-center justify-between px-5 py-3.5">
               <div>
                 <p className="text-sm font-bold text-[#0d1340] tracking-wide">vs {g.opponent}</p>
