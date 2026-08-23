@@ -6,6 +6,14 @@ import teamData from "@/data/team.json";
 export default function RecentResultsCard() {
   const sorted = [...teamData.scores].sort((a, b) => b.id - a.id);
   const results = sorted.slice(1, 11);
+
+  // The last ten can straddle seasons — label the footer with what's actually listed.
+  const seasons = results.reduce<string[]>(
+    (acc, r) => (acc.includes(r.season) ? acc : [...acc, r.season]),
+    [],
+  );
+  const seasonLabel =
+    seasons.length > 1 ? `${seasons[seasons.length - 1]} – ${seasons[0]}` : seasons[0] ?? teamData.season;
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -35,7 +43,7 @@ export default function RecentResultsCard() {
 
       <div className="bg-[#1e2878]/15 border-t border-[#1e2878]/30 px-4 py-2">
         <span className="text-[10px] text-[#5a6280] tracking-widest uppercase">
-          {teamData.season}
+          {seasonLabel}
         </span>
       </div>
     </motion.div>

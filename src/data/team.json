@@ -1,5 +1,5 @@
 {
-  "season": "2026 Spring",
+  "season": "2026 Fall",
   "offSeason": false,
   "scores": [
     {
@@ -8,7 +8,9 @@
       "tuskers": 1,
       "opp": 8,
       "date": "2026-01-18",
+      "season": "2026 Spring",
       "venue": "Singapore American School",
+      "tournament": "Singapore International Baseball League",
       "matchType": "Group Stage",
       "isWin": false
     },
@@ -18,7 +20,9 @@
       "tuskers": 7,
       "opp": 13,
       "date": "2026-01-25",
+      "season": "2026 Spring",
       "venue": "Singapore American School",
+      "tournament": "Singapore International Baseball League",
       "matchType": "Group Stage",
       "isWin": false
     },
@@ -28,7 +32,9 @@
       "tuskers": 5,
       "opp": 2,
       "date": "2026-02-01",
+      "season": "2026 Spring",
       "venue": "Singapore American School",
+      "tournament": "Singapore International Baseball League",
       "matchType": "Group Stage",
       "isWin": true
     },
@@ -38,7 +44,9 @@
       "tuskers": 6,
       "opp": 8,
       "date": "2026-02-08",
+      "season": "2026 Spring",
       "venue": "Singapore American School",
+      "tournament": "Singapore International Baseball League",
       "matchType": "Group Stage",
       "isWin": false
     },
@@ -48,7 +56,9 @@
       "tuskers": 9,
       "opp": 0,
       "date": "2026-02-22",
+      "season": "2026 Spring",
       "venue": "Singapore American School",
+      "tournament": "Singapore International Baseball League",
       "matchType": "Group Stage",
       "isWin": true
     },
@@ -58,7 +68,9 @@
       "tuskers": 7,
       "opp": 0,
       "date": "2026-03-01",
+      "season": "2026 Spring",
       "venue": "Singapore American School",
+      "tournament": "Singapore International Baseball League",
       "matchType": "Group Stage",
       "isWin": true
     },
@@ -68,7 +80,9 @@
       "tuskers": 2,
       "opp": 3,
       "date": "2026-03-07",
+      "season": "2026 Spring",
       "venue": "Bedok Sports Complex",
+      "tournament": "Singapore International Baseball League",
       "matchType": "Group Stage",
       "isWin": false
     },
@@ -78,7 +92,9 @@
       "tuskers": 3,
       "opp": 11,
       "date": "2026-03-15",
+      "season": "2026 Spring",
       "venue": "Singapore American School",
+      "tournament": "Singapore International Baseball League",
       "matchType": "Group Stage",
       "isWin": false
     },
@@ -88,7 +104,9 @@
       "tuskers": 7,
       "opp": 1,
       "date": "2026-04-19",
+      "season": "2026 Spring",
       "venue": "Singapore American School",
+      "tournament": "Singapore International Baseball League",
       "matchType": "Group Stage",
       "isWin": true
     },
@@ -98,7 +116,9 @@
       "tuskers": 10,
       "opp": 6,
       "date": "2026-04-26",
+      "season": "2026 Spring",
       "venue": "Singapore American School",
+      "tournament": "Singapore International Baseball League",
       "matchType": "Playoff (Quarter Final)",
       "isWin": true
     },
@@ -108,9 +128,23 @@
       "tuskers": 1,
       "opp": 9,
       "date": "2026-05-10",
+      "season": "2026 Spring",
       "venue": "Singapore American School",
+      "tournament": "Singapore International Baseball League",
       "matchType": "Playoff (Semi Final)",
       "isWin": false
+    },
+    {
+      "id": 12,
+      "opponent": "Tornados",
+      "tuskers": 4,
+      "opp": 2,
+      "date": "2026-08-22",
+      "season": "2026 Fall",
+      "venue": "Singapore American School",
+      "tournament": "Singapore International Baseball League",
+      "matchType": "Group Stage",
+      "isWin": true
     }
   ],
   "roster": [
@@ -248,7 +282,18 @@
       "bio": "1st baseman who can play in the 3rd base."
     }
   ],
-  "schedule": [],
+  "schedule": [
+    {
+      "id": 1,
+      "opponent": "White Eagles",
+      "date": "2026-08-30",
+      "season": "2026 Fall",
+      "venue": "Singapore American School",
+      "time": "13:15",
+      "tournament": "Singapore International Baseball League",
+      "matchType": "Group Stage"
+    }
+  ],
   "contact": {
     "email": "play@tuskers.sg",
     "phones": [
@@ -268,9 +313,9 @@
     "highlights": ["SIBL Members", "Est. 2022", "Open to All", "2026 - Spring Semi finalist"]
   },
   "achievements": [
-    { "id": 1, "season": "2024", "result": "Quarter-Finalists", "badge": "QF", "highlight": false },
+    { "id": 1, "season": "2024 Fall", "result": "Quarter-Finalists", "badge": "QF", "highlight": false },
     { "id": 2, "season": "2025 Spring", "result": "Quarter-Finalists", "badge": "QF", "highlight": false },
-    { "id": 3, "season": "2025 Summer", "result": "Semi-Finalists", "badge": "SF", "highlight": false },
+    { "id": 3, "season": "2025 Fall", "result": "Semi-Finalists", "badge": "SF", "highlight": false },
     { "id": 4, "season": "2026 Spring", "result": "Semi-Finalists", "badge": "SF", "highlight": true }
   ],
   "gallery": [

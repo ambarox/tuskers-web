@@ -1,6 +1,45 @@
 {
   "news": [
     {
+      "id": 6,
+      "title": "Fall Season Opens — Tuskers Edge Tornados 4–2, White Eagles Next",
+      "summary": "The 2026 Fall season is underway, and the Ceylon Tuskers opened it with a hard-fought 4–2 win over the Tornados at the Singapore American School on Saturday 22 August, first pitch at 2.15pm. The Tuskers struck first and built a 3–0 cushion through two innings, then held their nerve when the Tornados hit back in the third. A scoreless fourth sealed the opening-day win. Next up: the Tuskers face the White Eagles on Sunday 30 August at 1.15pm, back at the Singapore American School. Come down and back the boys — every voice in the stands counts.",
+      "date": "2026-08-22",
+      "img": "/news/wingame.jpeg",
+      "tag": "Match Report",
+      "opponent": "Tornados",
+      "innings": [
+        { "inning": 1, "tuskers": 1, "opp": 0 },
+        { "inning": 2, "tuskers": 2, "opp": 0 },
+        { "inning": 3, "tuskers": 1, "opp": 2 },
+        { "inning": 4, "tuskers": 0, "opp": 0 }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "New Threads — Tuskers Unveil New Jerseys",
+      "summary": "The Ceylon Tuskers have a fresh look heading into the 2026 Fall season. The new kit pairs a navy jersey trimmed in gold with the classic Tuskers script across the chest, matching navy caps carrying the T logo, and clean white pants. The squad gathered at the Singapore American School to show them off before the campaign got underway. Same club, same fight — sharper threads.",
+      "date": "2026-08-15",
+      "img": "/news/news3.jpeg",
+      "tag": "Club Update"
+    },
+    {
+      "id": 4,
+      "title": "Practice Session — Saturday 25 July, Ang Mo Kio Ground",
+      "summary": "Tuskers training this Saturday, 25 July at 3.30pm at Ang Mo Kio ground. We will be running through fielding drills, batting practice, and situational play. All players are encouraged to come down — bring your glove, water, and plenty of energy. See you at the ballpark.",
+      "date": "2026-07-20",
+      "img": "/news/practice.jpeg",
+      "tag": "Announcement"
+    },
+    {
+      "id": 3,
+      "title": "Practice Session — Saturday 13 June, Ang Mo Kio Ground",
+      "summary": "Tuskers training this Saturday, 13 June at 3.30pm at Ang Mo Kio ground. The session covers throwing, fielding, and batting drills to keep the squad sharp through the off-season break. All players welcome — bring your glove, water, and plenty of energy. See you at the ballpark.",
+      "date": "2026-06-08",
+      "img": "/news/practice.jpeg",
+      "tag": "Announcement"
+    },
+    {
       "id": 2,
       "title": "Semi Final Exit — Blue Sox Defeat Tuskers 9–1",
       "summary": "The Ceylon Tuskers bowed out of the 2026 Spring season after a tough 9–1 defeat to the Blue Sox in the Semi Finals. Blue Sox struck early with a dominant 5-run first inning that set the tone, and the Tuskers struggled to find their rhythm at the plate. Our lone run came in the 4th inning, showing the fight never left the dugout. A tough result, but the Tuskers can be proud of reaching the Semi Finals this season. We rise again.",

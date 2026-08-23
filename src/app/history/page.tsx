@@ -12,8 +12,19 @@ export const metadata = {
 };
 
 export default function HistoryPage() {
-  const wins   = teamData.scores.filter((s) => s.isWin).length;
-  const losses = teamData.scores.length - wins;
+  const allResults = [...teamData.scores].sort((a, b) => b.id - a.id);
+
+  // Header record covers the current season only; earlier seasons keep their own
+  // record on their group heading below.
+  const current = allResults.filter((s) => s.season === teamData.season);
+  const wins    = current.filter((s) => s.isWin).length;
+  const losses  = current.length - wins;
+
+  // Newest season first, matching the result order. Only the two most recent
+  // seasons get a detailed result list.
+  const seasons = allResults
+    .reduce<string[]>((acc, s) => (acc.includes(s.season) ? acc : [...acc, s.season]), [])
+    .slice(0, 2);
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
@@ -35,17 +46,50 @@ export default function HistoryPage() {
           </div>
           <div className="w-px h-10 bg-[#1e2878]/40" />
           <div className="text-center">
-            <p className="text-3xl font-black text-[#0d1340]">{teamData.scores.length}</p>
+            <p className="text-3xl font-black text-[#0d1340]">{current.length}</p>
             <p className="text-[10px] tracking-widest uppercase text-[#5a6280] mt-0.5">Played</p>
           </div>
         </div>
       </div>
 
-      {/* Results table */}
+      {/* Upcoming */}
       <div className="leather blue-glow-border rounded-sm overflow-hidden">
-        <div className="score-label">All Results</div>
+        <div className="score-label">Upcoming Schedule</div>
         <div className="divide-y divide-[#1e2878]/15">
-          {[...teamData.scores].sort((a, b) => b.id - a.id).map((s) => (
+          {(teamData.schedule as { id: number; opponent: string; date: string; venue: string; time: string; tournament: string; matchType: string }[]).map((g) => (
+            <div key={g.id} className="flex items-center justify-between px-5 py-3.5">
+              <div>
+                <p className="text-sm font-bold text-[#0d1340] tracking-wide">vs {g.opponent}</p>
+                <p className="text-[10px] text-[#5a6280] tracking-wider uppercase mt-0.5">
+                  {g.tournament}
+                </p>
+                <p className="text-[10px] text-[#5a6280] mt-0.5 tracking-wider">
+                  {new Date(g.date).toLocaleDateString("en-SG", { day: "numeric", month: "short", year: "numeric" })}
+                  {" · "}{g.venue}
+                </p>
+                <p className="text-[10px] text-[#3040c8] font-bold tracking-wider uppercase mt-0.5">
+                  {g.matchType}
+                </p>
+              </div>
+              <span className="text-xs text-[#3040c8] font-bold tracking-widest">{g.time}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Results table — grouped by season, newest first */}
+      {seasons.map((season) => {
+        const games = allResults.filter((s) => s.season === season);
+        const w     = games.filter((s) => s.isWin).length;
+
+        return (
+      <div key={season} className="leather blue-glow-border rounded-sm overflow-hidden mt-8">
+        <div className="score-label flex items-center justify-between">
+          <span>{season}</span>
+          <span className="text-[9px] tracking-widest tabular-nums">{w}W · {games.length - w}L</span>
+        </div>
+        <div className="divide-y divide-[#1e2878]/15">
+          {games.map((s) => (
             <div key={s.id} className="flex items-center justify-between px-5 py-3.5 hover:bg-[#1e2878]/5 transition-colors">
               <div className="flex items-center gap-4">
                 <span className={`text-xs font-black tracking-widest w-4 ${s.isWin ? "text-green-700" : "text-red-400"}`}>
@@ -53,6 +97,9 @@ export default function HistoryPage() {
                 </span>
                 <div>
                   <p className="text-sm font-bold text-[#0d1340] tracking-wide">vs {s.opponent}</p>
+                  <p className="text-[10px] text-[#5a6280] tracking-wider uppercase mt-0.5">
+                    {s.tournament}
+                  </p>
                   <p className="text-[10px] text-[#5a6280] mt-0.5 tracking-wider">
                     {new Date(s.date).toLocaleDateString("en-SG", { day: "numeric", month: "short", year: "numeric" })}
                     {" · "}{s.venue}
@@ -74,28 +121,8 @@ export default function HistoryPage() {
           ))}
         </div>
       </div>
-
-      {/* Upcoming */}
-      <div className="mt-8 leather blue-glow-border rounded-sm overflow-hidden">
-        <div className="score-label">Upcoming Schedule</div>
-        <div className="divide-y divide-[#1e2878]/15">
-          {(teamData.schedule as { id: number; opponent: string; date: string; venue: string; time: string; matchType: string }[]).map((g) => (
-            <div key={g.id} className="flex items-center justify-between px-5 py-3.5">
-              <div>
-                <p className="text-sm font-bold text-[#0d1340] tracking-wide">vs {g.opponent}</p>
-                <p className="text-[10px] text-[#5a6280] mt-0.5 tracking-wider">
-                  {new Date(g.date).toLocaleDateString("en-SG", { day: "numeric", month: "short", year: "numeric" })}
-                  {" · "}{g.venue}
-                </p>
-                <p className="text-[10px] text-[#3040c8] font-bold tracking-wider uppercase mt-0.5">
-                  {g.matchType}
-                </p>
-              </div>
-              <span className="text-xs text-[#3040c8] font-bold tracking-widest">{g.time}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 }
