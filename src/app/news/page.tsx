@@ -1,4 +1,5 @@
 import newsData from "@/data/news.json";
+import ShareIcons from "@/components/ShareIcons";
 
 export const metadata = {
   title: "News & Announcements",
@@ -78,7 +79,8 @@ export default function NewsPage() {
         {articles.map((item) => (
           <article
             key={item.id}
-            className="leather blue-glow-border rounded-sm overflow-hidden flex flex-col sm:flex-row"
+            id={`news-${item.id}`}
+            className="leather blue-glow-border rounded-sm overflow-hidden flex flex-col sm:flex-row scroll-mt-24"
           >
             {/* Image — left side */}
             <div className="w-full sm:w-72 h-56 sm:h-auto flex-shrink-0 bg-[#1e2878]/10 overflow-hidden">
@@ -106,6 +108,13 @@ export default function NewsPage() {
                     year: "numeric",
                   })}
                 </span>
+                <div className="ml-auto">
+                  <ShareIcons
+                    title={item.title}
+                    summary={item.summary}
+                    url={`https://tuskers.sg/news#news-${item.id}`}
+                  />
+                </div>
               </div>
 
               <h2 className="text-lg font-black tracking-wide text-[#0d1340] leading-snug">
