@@ -34,11 +34,6 @@ export default function GalleryPage() {
             story of a club founded by Sri Lankan expats in 2022 that has grown
             into a side competing deep into the season.
           </p>
-          <p>
-            The slideshow runs on its own and reshuffles every visit, so the
-            order is never quite the same twice. Pick any photo from the strip
-            below to jump straight to it.
-          </p>
         </div>
       </div>
 
