@@ -331,6 +331,16 @@
     { "id": 4, "season": "2026 Spring", "result": "Semi-Finalists", "badge": "SF", "highlight": true }
   ],
   "gallery": [
+    { "id": 13, "src": "/gallery/match13.jpeg", "alt": "Infielder waits on the throw as a Tusker dives back into the bag" },
+    { "id": 14, "src": "/gallery/match14.jpeg", "alt": "Bena fires across the infield" },
+    { "id": 15, "src": "/gallery/match15.jpeg", "alt": "Padmaka delivers from the mound" },
+    { "id": 16, "src": "/gallery/match16.jpeg", "alt": "Bena slides in ahead of the tag" },
+    { "id": 17, "src": "/gallery/match17.jpeg", "alt": "Settling under a fly ball in foul territory" },
+    { "id": 18, "src": "/gallery/match18.jpeg", "alt": "Taking a lead off second" },
+    { "id": 19, "src": "/gallery/match19.jpeg", "alt": "Outfielder charges a base hit" },
+    { "id": 20, "src": "/gallery/match20.jpeg", "alt": "Beating out the throw at first" },
+    { "id": 21, "src": "/gallery/match21.jpeg", "alt": "Standing up at the bag after a hit" },
+    { "id": 22, "src": "/gallery/match22.jpeg", "alt": "Tuskers batter tracks the ball off the bat" },
     { "id": 1, "src": "/gallery/match1.jpeg", "alt": "Game day action" },
     { "id": 2, "src": "/gallery/match2.jpeg", "alt": "Team at bat" },
     { "id": 3, "src": "/gallery/match3.jpeg", "alt": "Fielding play" },

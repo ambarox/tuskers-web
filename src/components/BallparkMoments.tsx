@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type GalleryItem = {
   id: number;
@@ -58,9 +59,12 @@ export default function BallparkMoments({
       </div>
 
       <div className="bg-[#1e2878]/15 border-t border-[#1e2878]/30 px-4 py-2 flex items-center justify-between">
-        <span className="text-[9px] text-[#5a6280] tracking-widest uppercase">
-          {items.length} Photo{items.length !== 1 ? "s" : ""}
-        </span>
+        <Link
+          href="/gallery"
+          className="text-[9px] text-[#5a6280] hover:text-[#3040c8] tracking-widest uppercase transition-colors duration-200"
+        >
+          View all {gallery.length} Photo{gallery.length !== 1 ? "s" : ""}
+        </Link>
         <a
           href={youtubeUrl}
           target="_blank"
