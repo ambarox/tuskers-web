@@ -293,6 +293,23 @@
       "img": "/players/lahiruk.jpeg",
       "bio": "1st baseman who can play in the 3rd base."
     }
+  ,{
+      "id": 16,
+      "name": "Kasun Gardiarachchi",
+      "pos": "1st Base",
+      "pos2": "Right Field",
+      "no": "07",
+      "img": "/players/kasun.jpeg",
+      "bio": "First baseman who anchors the corner and can cover right field."
+    },{
+      "id": 17,
+      "name": "Sajith Gallage",
+      "pos": "Left Field",
+      "pos2": "3rd Base",
+      "no": "22",
+      "img": "/players/sajith.jpeg",
+      "bio": "Left fielder who also takes the hot corner at third."
+    }
   ],
   "schedule": [
     {
