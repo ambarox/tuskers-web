@@ -1,6 +1,21 @@
 {
   "news": [
     {
+      "id": 7,
+      "title": "Tuskers Roll Past White Eagles 15–6 — Falcons Up Next",
+      "summary": "The Ceylon Tuskers made it two from two in the 2026 Fall season with a commanding 15–6 win over the White Eagles at the Singapore American School on Sunday 30 August. The White Eagles came out swinging with a three-run opening inning, but the Tuskers answered straight back with three of their own to level it. From there the bats took over — four runs in the second put the Tuskers ahead for good, and an eight-run third blew the game wide open. The White Eagles managed one more in the fourth, but with the lead never in doubt the Tuskers did not need to bat again. Next up: the Tuskers face the Falcons on Sunday 6 September at 3.15pm, back at the Singapore American School. Come down and back the boys — every voice in the stands counts.",
+      "date": "2026-08-30",
+      "img": "/news/wingame.jpeg",
+      "tag": "Match Report",
+      "opponent": "White Eagles",
+      "innings": [
+        { "inning": 1, "tuskers": 3, "opp": 3 },
+        { "inning": 2, "tuskers": 4, "opp": 1 },
+        { "inning": 3, "tuskers": 8, "opp": 1 },
+        { "inning": 4, "tuskers": "X", "opp": 1 }
+      ]
+    },
+    {
       "id": 6,
       "title": "Fall Season Opens — Tuskers Edge Tornados 4–2, White Eagles Next",
       "summary": "The 2026 Fall season is underway, and the Ceylon Tuskers opened it with a hard-fought 4–2 win over the Tornados at the Singapore American School on Saturday 22 August, first pitch at 2.15pm. The Tuskers struck first and built a 3–0 cushion through two innings, then held their nerve when the Tornados hit back in the third. A scoreless fourth sealed the opening-day win. Next up: the Tuskers face the White Eagles on Sunday 30 August at 1.15pm, back at the Singapore American School. Come down and back the boys — every voice in the stands counts.",

@@ -33,7 +33,7 @@ export default function LatestNewsCard({ item }: { item: NewsItem }) {
 
       <div className="flex flex-col sm:flex-row">
         {/* Image */}
-        <div className="w-full sm:w-48 h-48 flex-shrink-0 bg-[#1e2878]/10 overflow-hidden">
+        <div className="w-full sm:w-48 h-48 sm:h-auto flex-shrink-0 bg-[#1e2878]/10 overflow-hidden">
           <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
         </div>
 

@@ -18,11 +18,16 @@ const TAG_COLORS: Record<string, string> = {
   "Club Update":  "bg-emerald-50 text-emerald-700",
 };
 
-type Inning = { inning: number; tuskers: number; opp: number };
+// "X" marks an inning a team did not bat (already leading, no need to hit).
+type Cell = number | string;
+type Inning = { inning: number; tuskers: Cell; opp: Cell };
+
+const runs = (cells: Cell[]) =>
+  cells.reduce<number>((s, c) => s + (typeof c === "number" ? c : 0), 0);
 
 function BoxScore({ innings, opponent }: { innings: Inning[]; opponent: string }) {
-  const tuskerTotal = innings.reduce((s, i) => s + i.tuskers, 0);
-  const oppTotal    = innings.reduce((s, i) => s + i.opp, 0);
+  const tuskerTotal = runs(innings.map((i) => i.tuskers));
+  const oppTotal    = runs(innings.map((i) => i.opp));
 
   return (
     <div className="mt-4 pt-4 border-t border-[#1e2878]/15 overflow-x-auto">
