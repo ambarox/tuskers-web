@@ -167,7 +167,7 @@
       "pos2": "2nd Base",
       "no": "14",
       "img": "/players/charles.jpeg",
-      "bio": "His batting style is unique. He's a true prodigy in the 2025 season."
+      "bio": "A batting style entirely his own — unorthodox enough to draw a second look from the dugout, effective enough that nobody argues with it. The prodigy of the 2025 season."
     },
     {
       "id": 2,
@@ -176,7 +176,7 @@
       "pos2": "Right Field",
       "no": "69",
       "img": "/players/bena.jpeg",
-      "bio": "3rd baseman who can play in outfield positions."
+      "bio": "Holds down the hot corner, but turns up at first and second just as often — a genuine utility infielder who fills whichever gap the lineup leaves. Shifts to right field when asked, and never makes a fuss about it."
     },
     {
       "id": 3,
@@ -185,7 +185,7 @@
       "pos2": "Pitcher",
       "no": "88",
       "img": "/players/dileepa.jpeg",
-      "bio": "Catcher and pitcher who can play in the 3rd base."
+      "bio": "Spends the day behind the plate in full gear, and when the arm is needed he takes the mound instead. Third base is his third address."
     },
     {
       "id": 4,
@@ -194,7 +194,7 @@
       "pos2": "2nd Base",
       "no": "77",
       "img": "/players/asan.jpeg",
-      "bio": "Short stop who can play in the 2nd base."
+      "bio": "Shortstop — which on this side means being wherever the ball is about to be. Quick hands, quicker feet, and an easy understanding with whoever is standing at second."
     },
     {
       "id": 5,
@@ -203,7 +203,7 @@
       "pos2": "Left Field",
       "no": "22",
       "img": "/players/thilina.jpeg",
-      "bio": "Speed and instinct in the outfield. Mostly plays at center."
+      "bio": "Reads the ball off the bat and is already moving. Patrols center, drifts into left, and covers ground most sides would simply concede."
     },
     {
       "id": 6,
@@ -212,7 +212,7 @@
       "pos2": "Catcher",
       "no": "45",
       "img": "/players/nimantha.jpeg",
-      "bio": "The engine of our outfield. Rarely misses a fly ball and hits for contact."
+      "bio": "The engine of the outfield. Rarely lets a fly ball drop, hits for contact when he comes in, and straps on the catcher's gear the moment the team needs it."
     },
     {
       "id": 7,
@@ -221,7 +221,7 @@
       "pos2": "Designated Hitter",
       "no": "2",
       "img": "/players/vimukthi.jpeg",
-      "bio": "Smooth fielder and clutch hitter. Brings calm to the outfield."
+      "bio": "A smooth fielder who never looks hurried, which has a way of settling everyone around him. Sharpest with the bat when the situation tightens."
     },
     {
       "id": 8,
@@ -230,7 +230,7 @@
       "pos2": "3rd Base",
       "no": "19",
       "img": "/players/yh.jpeg",
-      "bio": "Hot corner specialist with a cannon arm and solid batting average."
+      "bio": "A cannon from the hot corner and a steady bat in the order. Just as comfortable running a ball down in right field."
     },
     {
       "id": 9,
@@ -239,7 +239,7 @@
       "pos2": "3rd Base",
       "no": "14",
       "img": "/players/padmaka.jpeg",
-      "bio": "Veteran outfielder with a strong arm and big-game experience."
+      "bio": "Front foot in the air, everything behind the pitch — the delivery that starts most Tuskers innings. Moves across to third once he hands over the mound."
     },
     {
       "id": 10,
@@ -248,7 +248,7 @@
       "pos2": "Catcher",
       "no": "55",
       "img": "/players/harsha.jpeg",
-      "bio": "Veteran outfielder with a strong arm and big-game experience."
+      "bio": "Left fielder by trade, catcher whenever the gear needs filling. Sets up early in the box and waits for the pitch he came for."
     },
     {
       "id": 11,
@@ -257,7 +257,7 @@
       "pos2": "1st Base",
       "no": "9",
       "img": "/players/thisakya.jpeg",
-      "bio": "Second baseman who can play in the 1st base. Good at hitting the ball."
+      "bio": "Turns on the ball and finds the gap — one of the more dependable bats in the order. Covers second, slides across to first without fuss."
     },
     {
       "id": 12,
@@ -266,7 +266,7 @@
       "pos2": "Pitcher",
       "no": "9",
       "img": "/players/gajan.jpeg",
-      "bio": "Outfielder who can do occasional pitching."
+      "bio": "Right fielder with an arm good enough that the club puts the ball in his hand when a pitcher is called for."
     },
     {
       "id": 13,
@@ -275,7 +275,7 @@
       "pos2": "Right Field",
       "no": "8",
       "img": "/players/sandun.jpeg",
-      "bio": "Outfielder who can do occasional pitching."
+      "bio": "Second baseman who turns the double play and takes right field when asked. Runs the bases like the throw is always going to be close."
     },{
       "id": 14,
       "name": "Lahiru De Silva",
@@ -283,7 +283,7 @@
       "pos2": "Official Videographer",
       "no": "1",
       "img": "/players/lahirur.jpeg",
-      "bio": "Pertinent to the club's social media and photography."
+      "bio": "Wears number one without ever taking the field. If you have seen a Tuskers photograph or a highlight clip, chances are he was the one behind it."
     },{
       "id": 15,
       "name": "Lahiru Kaluthanthri",
@@ -291,7 +291,7 @@
       "pos2": "3rd Base",
       "no": "99",
       "img": "/players/lahiruk.jpeg",
-      "bio": "1st baseman who can play in the 3rd base."
+      "bio": "Anchors first base and swings with intent — the kind of contact that clears the infield in a hurry. Takes third when the lineup shuffles."
     }
   ,{
       "id": 16,
@@ -300,7 +300,7 @@
       "pos2": "Right Field",
       "no": "07",
       "img": "/players/kasun.jpeg",
-      "bio": "First baseman who anchors the corner and can cover right field."
+      "bio": "Holds down first, where a stretched glove and a steady head save more than the scorebook ever records. Covers right field when the lineup calls."
     },{
       "id": 17,
       "name": "Sajith Gallage",
@@ -308,7 +308,7 @@
       "pos2": "3rd Base",
       "no": "22",
       "img": "/players/sajith.jpeg",
-      "bio": "Left fielder who also takes the hot corner at third."
+      "bio": "Left field is his patch and he walks it like he owns it. Steps in at third whenever the hot corner needs covering."
     }
   ],
   "schedule": [

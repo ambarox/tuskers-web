@@ -2,9 +2,13 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
 import teamData from "@/data/team.json";
+import PlayerModal, { type Player } from "@/components/PlayerModal";
 
 export default function RosterPage() {
+  const [selected, setSelected] = useState<Player | null>(null);
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
       <div className="mb-10">
@@ -25,6 +29,11 @@ export default function RosterPage() {
             transition={{ duration: 0.4, delay: i * 0.08 }}
             className="card-hover group relative border-2 border-[#1e2878]/30 hover:border-[#1e2878] overflow-hidden rounded-sm bg-[#1e2878]"
           >
+            <button
+              onClick={() => setSelected(player)}
+              aria-label={`View ${player.name}`}
+              className="absolute inset-0 z-10 cursor-pointer"
+            />
             {/* Player image */}
             <div className="relative aspect-[3/4] bg-[#1e2878] overflow-hidden">
               {/* Fallback silhouette — behind the image */}
@@ -35,7 +44,7 @@ export default function RosterPage() {
                 src={player.img}
                 alt={player.name}
                 fill
-                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 768px) 50vw, 33vw"
                 onError={() => {}}
               />
@@ -58,6 +67,8 @@ export default function RosterPage() {
           </motion.div>
         ))}
       </div>
+
+      <PlayerModal player={selected} onClose={() => setSelected(null)} />
     </div>
   );
 }
