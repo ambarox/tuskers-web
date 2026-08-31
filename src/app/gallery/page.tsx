@@ -21,18 +21,23 @@ export default function GalleryPage() {
         </h1>
         <div className="mt-4 space-y-3 text-sm leading-relaxed text-[#5a6280]">
           <p>
-            Ballpark moments from the diamond — the plays, the pitches, and the
-            celebrations that make up a Ceylon Tuskers season in Singapore. Every
-            frame here was shot at a Singapore International Baseball League
-            fixture, from the first warm-up throws to the last out of the day.
+            Ceylon Tuskers baseball on the red clay of Singapore, shot across
+            Singapore International Baseball League fixtures. The action frames
+            catch the game at its sharpest — a pitcher mid-delivery with his
+            front foot still in the air, a runner diving back into the bag a
+            heartbeat ahead of the throw, a first baseman stretched full length
+            for a ball that has not arrived yet, a batter tracking the flight of
+            one he has just put in play.
           </p>
           <p>
-            You will find dust-raising slides into second, pitchers mid-delivery,
-            infielders waiting on a throw, and the quieter moments in between —
-            the walk back to the dugout, a batter tracking a ball off the bat, a
-            teammate standing up at the bag after a hit. Together they tell the
-            story of a club founded by Sri Lankan expats in 2022 that has grown
-            into a side competing deep into the season.
+            Just as many frames are about everything around the game: the mound
+            conference with the catcher still in his mask, the handshake line
+            filing past at the end of the day, the wall of high-fives waiting at
+            the fence for a runner coming home, the whole squad arm in arm and
+            grinning at the camera, and a helmet, a glove and a scatter of bats
+            left in the dirt between innings. Royal blue pinstripes give way to
+            navy as the set goes on — the kit has changed since the club was
+            founded in 2022, the red clay and the green outfield fence have not.
           </p>
         </div>
       </div>
